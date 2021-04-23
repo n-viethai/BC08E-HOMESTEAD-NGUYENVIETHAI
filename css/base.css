@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5% !important;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #b06010;
+
+  --black-color: #000;
+
+  --white-color: #fff;
+
+  --silver-color: #f0f0f0;
+
+  --blue-color: #204b87;
+
+  --header--height: 10rem;
+
+  --font-size-normal: 1.8rem;
+  --font-size-heading: 6.4rem;
+
+  --line-height: 3.2rem;
+}
+
+/* Edit Bootstrap   */
+
+p,
+h1,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: initial;
+}
+
+/* -------------------------------------------- */
+
+.grid {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.mybtn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding: 1.2rem 4.8rem;
+  border-radius: 5rem;
+  min-width: 12rem;
+  transition: all 0.5s ease;
+}
+
+.mybtn--primary {
+  background-color: var(--black-color);
+  color: var(--primary-color);
+  padding: 0.8rem 3.2rem;
+  border-radius: 0;
+  font-size: 1.6rem;
+}
+
+.mybtn.mybtn--primary:hover {
+  color: var(--white-color);
+}
+
+/* ------------------animation--------------------- */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------Back--To-TOP--------------------- */
+
+.ontop {
+  position: fixed;
+  z-index: 99999999999999;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+}
+
+.ontop:hover {
+  background-color: #777;
+}
+
+.ontop:hover i {
+  color: var(--white-color);
+}
+
+.ontop i {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* ---------------------owl -carousel------------------ */
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #ff9800;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: rgba(255, 153, 0, 0.5);
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 3.2rem;
+}
